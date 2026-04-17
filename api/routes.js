@@ -118,11 +118,15 @@ router.get('/catalog/:id', (req, res) => {
 
     if (sourceBrand && sourceSize && brandSizing.brands[sourceBrand]) {
         const result = computeRecommendation(product, sourceBrand, sourceSize, fitPreference);
-        return res.json(result);
+        
+        // Attempt AI augmentation
+        return augmentWithAI(product, result).then(augmentedResult => {
+            res.json(augmentedResult);
+        });
     }
 
     // No profile provided — return raw product with defaults
-    res.json({
+    const result = {
         ...product,
         recommendedSize: product.variants[Math.floor(product.variants.length / 2)],
         confidence: 75,
@@ -132,6 +136,11 @@ router.get('/catalog/:id', (req, res) => {
             `This product ${product.fitTendency.replace(/_/g, ' ')}.`,
             "Create a fit profile for a personalized recommendation."
         ]
+    };
+    
+    // Attempt AI augmentation asynchronously
+    augmentWithAI(product, result).then(augmentedResult => {
+        res.json(augmentedResult);
     });
 });
 

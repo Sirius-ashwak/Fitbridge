@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>FitBridge AI - Intelligence Detail</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-background": "#2d3435",
+                    "on-tertiary-container": "#5a5c5e",
+                    "primary-fixed-dim": "#d6d3d6",
+                    "background": "#f9f9f9",
+                    "on-primary-container": "#525154",
+                    "surface-variant": "#dde4e5",
+                    "on-secondary-fixed": "#3e3f43",
+                    "inverse-primary": "#ffffff",
+                    "surface-bright": "#f9f9f9",
+                    "secondary": "#5e5f63",
+                    "primary": "#5f5e60",
+                    "secondary-dim": "#525357",
+                    "on-surface-variant": "#596061",
+                    "on-error": "#fff7f7",
+                    "surface-dim": "#d3dbdd",
+                    "error-dim": "#4f0116",
+                    "on-tertiary-fixed-variant": "#656668",
+                    "secondary-fixed": "#e3e2e7",
+                    "on-secondary-container": "#515156",
+                    "outline": "#757c7d",
+                    "on-error-container": "#782232",
+                    "error": "#9e3f4e",
+                    "on-surface": "#2d3435",
+                    "surface-container-high": "#e4e9ea",
+                    "primary-container": "#e4e2e4",
+                    "surface-tint": "#5f5e60",
+                    "tertiary-container": "#f3f3f5",
+                    "tertiary": "#5e5f61",
+                    "surface-container-lowest": "#ffffff",
+                    "surface-container-highest": "#dde4e5",
+                    "inverse-surface": "#0c0f0f",
+                    "tertiary-fixed": "#f3f3f5",
+                    "surface-container": "#ebeeef",
+                    "on-primary-fixed-variant": "#5c5b5d",
+                    "surface-container-low": "#f2f4f4",
+                    "error-container": "#ff8b9a",
+                    "surface": "#f9f9f9",
+                    "on-primary": "#faf7f9",
+                    "primary-fixed": "#e4e2e4",
+                    "primary-dim": "#535254",
+                    "secondary-fixed-dim": "#d5d4d9",
+                    "inverse-on-surface": "#9c9d9d",
+                    "on-secondary-fixed-variant": "#5b5b60",
+                    "outline-variant": "#acb3b4",
+                    "on-secondary": "#faf8fe",
+                    "on-tertiary-fixed": "#484a4c",
+                    "secondary-container": "#e3e2e7",
+                    "tertiary-dim": "#515355",
+                    "tertiary-fixed-dim": "#e5e5e7",
+                    "on-primary-fixed": "#3f3f41",
+                    "on-tertiary": "#f9f9fb"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "spacing": {},
+            "fontFamily": {
+                    "headline": [
+                            "Inter"
+                    ],
+                    "body": [
+                            "Inter"
+                    ],
+                    "label": [
+                            "Inter"
+                    ]
+            }
+    },
+        },
+      }
+    </script>
+<style>
+        body { font-family: 'Inter', sans-serif; }
+    </style>
+</head>
+<body class="bg-background text-on-background antialiased selection:bg-primary-container selection:text-on-primary-container min-h-screen flex flex-col">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-neutral-50/80 dark:bg-neutral-900/80 backdrop-blur-xl no-border tonal-shift via bg-neutral-100 dark:bg-neutral-800/50 shadow-[0_20px_40px_rgba(12,15,15,0.06)]">
+<div class="flex justify-between items-center h-20 px-12 w-full mx-auto">
+<div class="text-xl font-bold tracking-tighter text-neutral-900 dark:text-neutral-50">
+                FitBridge AI
+            </div>
+<div class="hidden md:flex items-center gap-8 font-['Inter'] tracking-tight text-sm font-medium">
+<a class="text-neutral-500 dark:text-neutral-400 hover:text-neutral-900 dark:hover:text-neutral-50 transition-colors duration-300 scale-98 active:opacity-80 transition-all" href="#">Platform</a>
+<a class="text-neutral-500 dark:text-neutral-400 hover:text-neutral-900 dark:hover:text-neutral-50 transition-colors duration-300 scale-98 active:opacity-80 transition-all" href="#">Elite Care</a>
+<a class="text-neutral-500 dark:text-neutral-400 hover:text-neutral-900 dark:hover:text-neutral-50 transition-colors duration-300 scale-98 active:opacity-80 transition-all" href="#">Network</a>
+<a class="text-neutral-900 dark:text-neutral-50 border-b border-neutral-900 dark:border-neutral-50 pb-1 scale-98 active:opacity-80 transition-all" href="#">Intelligence</a>
+</div>
+<div class="flex items-center gap-4 text-neutral-900 dark:text-neutral-50">
+<button class="scale-98 active:opacity-80 transition-all hover:text-neutral-900 dark:hover:text-neutral-50 transition-colors duration-300">
+<span class="material-symbols-outlined" data-icon="search">search</span>
+</button>
+<button class="scale-98 active:opacity-80 transition-all hover:text-neutral-900 dark:hover:text-neutral-50 transition-colors duration-300">
+<span class="material-symbols-outlined" data-icon="notifications">notifications</span>
+</button>
+<button class="scale-98 active:opacity-80 transition-all hover:text-neutral-900 dark:hover:text-neutral-50 transition-colors duration-300">
+<span class="material-symbols-outlined" data-icon="person_outline">person_outline</span>
+</button>
+</div>
+</div>
+</nav>
+<!-- Main Canvas -->
+<main class="flex-grow pt-20">
+<!-- Hero Section -->
+<section class="w-full min-h-[819px] flex flex-col md:flex-row items-center bg-surface-container-lowest">
+<div class="w-full md:w-1/2 p-12 md:p-24 flex flex-col justify-center items-start">
+<span id="productCategory" class="font-label text-[0.75rem] uppercase tracking-[0.1em] text-on-surface-variant mb-6">New Arrival • Obsidian Collection</span>
+<h1 id="productName" class="font-headline text-[3.5rem] leading-[1.1] tracking-[-0.02em] font-semibold text-on-background mb-8">
+                    Loading...
+                </h1>
+<p id="productDescription" class="font-body text-[1rem] leading-[1.6] text-on-surface-variant mb-12 max-w-md">
+                    Loading product details...
+                </p>
+<div class="flex items-center gap-6">
+<button id="addToProfileBtn" class="bg-primary text-inverse-primary px-8 py-4 rounded-xl font-medium tracking-wide shadow-[0_20px_40px_rgba(12,15,15,0.06)] hover:bg-primary-dim transition-colors">
+                        Add to Profile
+                    </button>
+<button class="text-on-background font-medium border-b border-on-background/20 pb-1 hover:border-on-background transition-colors">
+                        View Technical Specs
+                    </button>
+</div>
+</div>
+<div class="w-full md:w-1/2 h-[614px] md:h-[819px] bg-surface-container-low relative overflow-hidden">
+<img id="productImage" alt="" class="absolute inset-0 w-full h-full object-cover mix-blend-multiply" src=""/>
+</div>
+</section>
+<!-- Fit Intelligence Section (Bento Grid) -->
+<section class="py-32 px-12 md:px-24 bg-background">
+<div class="max-w-7xl mx-auto">
+<div class="mb-20 text-center md:text-left">
+<span class="font-label text-[0.75rem] uppercase tracking-[0.1em] text-on-surface-variant mb-4 block">Fit Intelligence Engine</span>
+<h2 class="font-headline text-[2rem] md:text-[2.5rem] font-semibold tracking-tight text-on-background">
+                        Precision Aligned.
+                    </h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Overall Match Card -->
+<div class="col-span-1 md:col-span-2 bg-surface-container-lowest rounded-xl p-10 shadow-[0_20px_40px_rgba(12,15,15,0.06)] flex flex-col justify-between">
+<div class="flex justify-between items-start mb-12">
+<div>
+<h3 class="font-headline text-xl font-medium text-on-background mb-2">Profile Match <span id="recSizeBadge" class="ml-2 text-sm bg-surface-variant px-2 py-1 rounded">Size: -</span></h3>
+<p class="text-on-surface-variant text-sm" id="riskLevelText">Based on your fit profile.</p>
+</div>
+<div id="confidenceScore" class="w-16 h-16 rounded-full border-4 border-primary flex items-center justify-center text-xl font-semibold text-primary">
+                                -%
+                            </div>
+</div>
+<div class="w-full h-2 bg-surface-container-low rounded-full overflow-hidden">
+<div id="confidenceBar" class="h-full bg-primary w-[0%] rounded-full transition-all duration-1000"></div>
+</div>
+</div>
+<!-- Dynamic Reasoning -->
+<div class="col-span-1 bg-surface-container-low rounded-xl p-10 flex flex-col justify-between">
+<div>
+<span class="material-symbols-outlined text-on-surface-variant mb-4 text-3xl" id="riskIcon">analytics</span>
+<h3 class="font-headline text-lg font-medium text-on-background mb-2">Fit Analysis</h3>
+<ul id="reasonsList" class="text-on-surface-variant text-sm leading-relaxed list-disc pl-4 space-y-2">
+    <li>Loading analysis...</li>
+</ul>
+</div>
+</div>
+<!-- Dimensional Comparison -->
+<div class="col-span-1 md:col-span-3 bg-surface-container-lowest rounded-xl p-10 shadow-[0_20px_40px_rgba(12,15,15,0.06)]">
+<h3 class="font-headline text-xl font-medium text-on-background mb-8">Dimensional Mapping</h3>
+<div class="space-y-6">
+<!-- Chest -->
+<div class="flex items-center justify-between">
+<span class="text-on-surface text-sm w-24">Chest</span>
+<div class="flex-grow mx-6 flex items-center h-1 bg-surface-container relative">
+<div class="absolute w-4 h-4 rounded-full bg-primary top-1/2 -translate-y-1/2 left-[40%]"></div>
+<div class="absolute w-3 h-3 rounded-full bg-secondary-dim top-1/2 -translate-y-1/2 left-[42%]"></div>
+</div>
+<span class="text-on-surface-variant text-xs w-16 text-right">Optimal</span>
+</div>
+<!-- Shoulders -->
+<div class="flex items-center justify-between">
+<span class="text-on-surface text-sm w-24">Shoulders</span>
+<div class="flex-grow mx-6 flex items-center h-1 bg-surface-container relative">
+<div class="absolute w-4 h-4 rounded-full bg-primary top-1/2 -translate-y-1/2 left-[60%]"></div>
+<div class="absolute w-3 h-3 rounded-full bg-secondary-dim top-1/2 -translate-y-1/2 left-[60%]"></div>
+</div>
+<span class="text-on-surface-variant text-xs w-16 text-right">Exact</span>
+</div>
+<!-- Length -->
+<div class="flex items-center justify-between">
+<span class="text-on-surface text-sm w-24">Length</span>
+<div class="flex-grow mx-6 flex items-center h-1 bg-surface-container relative">
+<div class="absolute w-4 h-4 rounded-full bg-primary top-1/2 -translate-y-1/2 left-[75%]"></div>
+<div class="absolute w-3 h-3 rounded-full bg-secondary-dim top-1/2 -translate-y-1/2 left-[70%]"></div>
+</div>
+<span class="text-on-surface-variant text-xs w-16 text-right">+1.2" Drap</span>
+</div>
+<div class="flex gap-4 mt-8 pt-4 border-t border-surface-container-low text-xs text-on-surface-variant justify-end">
+<div class="flex items-center gap-2"><div class="w-2 h-2 rounded-full bg-primary"></div> Garment Spec</div>
+<div class="flex items-center gap-2"><div class="w-2 h-2 rounded-full bg-secondary-dim"></div> Your Profile</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full py-20 px-12 bg-neutral-900 dark:bg-black text-neutral-50 font-['Inter'] text-xs tracking-widest uppercase tonal-shift using bg-neutral-900 flat flex flex-col md:flex-row justify-between items-start w-full border-t border-neutral-800/50 fade-in on scroll">
+<div class="mb-12 md:mb-0">
+<span class="text-neutral-50 font-black tracking-widest text-lg">FitBridge AI</span>
+<p class="mt-4 text-neutral-500 normal-case tracking-normal text-sm max-w-xs">Elevating human performance through computational apparel intelligence.</p>
+</div>
+<div class="flex flex-col md:flex-row gap-12">
+<div class="flex flex-col gap-4">
+<a class="text-neutral-500 hover:text-neutral-200 transition-colors" href="#">Privacy Policy</a>
+<a class="text-neutral-500 hover:text-neutral-200 transition-colors" href="#">Terms of Service</a>
+</div>
+<div class="flex flex-col gap-4">
+<a class="text-neutral-500 hover:text-neutral-200 transition-colors" href="#">Security</a>
+<a class="text-neutral-500 hover:text-neutral-200 transition-colors" href="#">Status</a>
+</div>
+</div>
+<div class="w-full md:w-auto mt-12 md:mt-0 pt-8 md:pt-0 border-t border-neutral-800/50 md:border-t-0 text-neutral-500">
+            © 2024 FitBridge AI Intelligence. All rights reserved.
+        </div>
+</footer>
+<script>
+document.addEventListener("DOMContentLoaded", async () => {
+    const urlParams = new URLSearchParams(window.location.search);
+    const productId = urlParams.get('id') || 'sku-101'; // Default backup
+
+    const storedProfile = localStorage.getItem("fitProfile");
+    let queryParams = `?id=${productId}`;
+    
+    if (storedProfile) {
+        const profile = JSON.parse(storedProfile);
+        queryParams = `?brand=${encodeURIComponent(profile.sourceBrand)}&size=${encodeURIComponent(profile.sourceSize)}&fit=${encodeURIComponent(profile.fitPreference)}`;
+    }
+
+    try {
+        const res = await fetch(`/api/catalog/${productId}${queryParams}`);
+        if (!res.ok) throw new Error("Failed to fetch product");
+        const product = await res.json();
+
+        // Update Hero
+        document.getElementById("productCategory").innerText = `${product.brand} • ${product.category}`;
+        document.getElementById("productName").innerText = product.name;
+        document.getElementById("productDescription").innerText = `This ${product.category.toLowerCase()} by ${product.brand} features high-end materials. Sizing tends to run ${product.fitTendency.replace(/_/g, ' ')}.`;
+        document.getElementById("productImage").src = product.image;
+        document.getElementById("addToProfileBtn").innerText = `Add Rec Size ${product.recommendedSize} — $${product.basePrice}`;
+
+        // Update Intelligence
+        document.getElementById("recSizeBadge").innerText = `Rec Size: ${product.recommendedSize}`;
+        document.getElementById("confidenceScore").innerText = `${product.confidence}%`;
+        document.getElementById("confidenceBar").style.width = `${product.confidence}%`;
+        
+        let headerColor = "text-on-background";
+        if(product.riskLevel === 'High') {
+            headerColor = "text-error";
+            document.getElementById("riskIcon").innerText = "warning";
+            document.getElementById("riskIcon").className = "material-symbols-outlined text-error mb-4 text-3xl";
+            document.getElementById("confidenceScore").className = "w-16 h-16 rounded-full border-4 border-error flex items-center justify-center text-xl font-semibold text-error";
+            document.getElementById("confidenceBar").className = "h-full bg-error w-0 rounded-full transition-all duration-1000";
+        }
+
+        document.getElementById("riskLevelText").innerHTML = `<span class="${headerColor} font-semibold">Risk Level: ${product.riskLevel}</span>`;
+        
+        const reasonsHtml = product.reasons.map(r => `<li>${r}</li>`).join("");
+        document.getElementById("reasonsList").innerHTML = reasonsHtml;
+        
+        // Trigger bar animation
+        setTimeout(() => {
+            document.getElementById("confidenceBar").style.width = `${product.confidence}%`;
+        }, 100);
+
+    } catch (err) {
+        console.error(err);
+        document.getElementById("productName").innerText = "Product Not Found";
+        document.getElementById("productDescription").innerText = "We couldn't load the details for this item.";
+    }
+});
+</script>
+</body></html>

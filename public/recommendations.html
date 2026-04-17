@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>FitBridge AI - Intelligence</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-background": "#2d3435",
+                        "on-tertiary-container": "#5a5c5e",
+                        "primary-fixed-dim": "#d6d3d6",
+                        "background": "#f9f9f9",
+                        "on-primary-container": "#525154",
+                        "surface-variant": "#dde4e5",
+                        "on-secondary-fixed": "#3e3f43",
+                        "inverse-primary": "#ffffff",
+                        "surface-bright": "#f9f9f9",
+                        "secondary": "#5e5f63",
+                        "primary": "#5f5e60",
+                        "secondary-dim": "#525357",
+                        "on-surface-variant": "#596061",
+                        "on-error": "#fff7f7",
+                        "surface-dim": "#d3dbdd",
+                        "error-dim": "#4f0116",
+                        "on-tertiary-fixed-variant": "#656668",
+                        "secondary-fixed": "#e3e2e7",
+                        "on-secondary-container": "#515156",
+                        "outline": "#757c7d",
+                        "on-error-container": "#782232",
+                        "error": "#9e3f4e",
+                        "on-surface": "#2d3435",
+                        "surface-container-high": "#e4e9ea",
+                        "primary-container": "#e4e2e4",
+                        "surface-tint": "#5f5e60",
+                        "tertiary-container": "#f3f3f5",
+                        "tertiary": "#5e5f61",
+                        "surface-container-lowest": "#ffffff",
+                        "surface-container-highest": "#dde4e5",
+                        "inverse-surface": "#0c0f0f",
+                        "tertiary-fixed": "#f3f3f5",
+                        "surface-container": "#ebeeef",
+                        "on-primary-fixed-variant": "#5c5b5d",
+                        "surface-container-low": "#f2f4f4",
+                        "error-container": "#ff8b9a",
+                        "surface": "#f9f9f9",
+                        "on-primary": "#faf7f9",
+                        "primary-fixed": "#e4e2e4",
+                        "primary-dim": "#535254",
+                        "secondary-fixed-dim": "#d5d4d9",
+                        "inverse-on-surface": "#9c9d9d",
+                        "on-secondary-fixed-variant": "#5b5b60",
+                        "outline-variant": "#acb3b4",
+                        "on-secondary": "#faf8fe",
+                        "on-tertiary-fixed": "#484a4c",
+                        "secondary-container": "#e3e2e7",
+                        "tertiary-dim": "#515355",
+                        "tertiary-fixed-dim": "#e5e5e7",
+                        "on-primary-fixed": "#3f3f41",
+                        "on-tertiary": "#f9f9fb"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "fontFamily": {
+                        "headline": ["Inter", "sans-serif"],
+                        "body": ["Inter", "sans-serif"],
+                        "label": ["Inter", "sans-serif"]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f9f9f9;
+            color: #2d3435;
+            -webkit-font-smoothing: antialiased;
+        }
+        .glass-panel {
+            background: rgba(249, 249, 249, 0.7);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+        }
+        .satin-gradient {
+            background: linear-gradient(105deg, #5f5e60 0%, #535254 100%);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background min-h-screen flex flex-col">
+<!-- TopNavBar -->
+<nav aria-label="Top Navigation" class="fixed top-0 w-full z-50 bg-white/80 dark:bg-stone-950/80 backdrop-blur-2xl shadow-[0_1px_0_0_rgba(0,0,0,0.05)] dark:shadow-none transition-all duration-300 ease-in-out">
+<div class="flex items-center justify-between px-8 py-4 max-w-[1920px] mx-auto w-full">
+<!-- Brand -->
+<div class="flex items-center gap-8">
+<a class="text-xl font-bold tracking-tighter text-stone-900 dark:text-white transition-all" href="#">FitBridge AI</a>
+<!-- Desktop Nav -->
+<div class="hidden md:flex items-center gap-6 font-sans tracking-tight text-sm font-medium">
+<a class="text-stone-500 dark:text-stone-400 hover:text-stone-900 dark:hover:text-white transition-colors duration-300 ease-in-out" href="#">Search</a>
+<a class="text-stone-500 dark:text-stone-400 hover:text-stone-900 dark:hover:text-white transition-colors duration-300 ease-in-out" href="#">Platform</a>
+<a class="text-stone-500 dark:text-stone-400 hover:text-stone-900 dark:hover:text-white transition-colors duration-300 ease-in-out" href="#">Elite Care</a>
+<a aria-current="page" class="text-stone-900 dark:text-white border-b border-stone-900 dark:border-white pb-1 transition-all duration-300 ease-in-out" href="#">Intelligence</a>
+</div>
+</div>
+<!-- Trailing Actions & Search -->
+<div class="flex items-center gap-4">
+<!-- Search Bar (on_right) -->
+<div class="hidden md:flex relative group transition-all duration-300 ease-in-out">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-stone-400" style="font-variation-settings: 'FILL' 0;">search</span>
+<input class="pl-10 pr-4 py-2 bg-stone-100 dark:bg-stone-900 border-none rounded-full text-sm font-sans tracking-tight text-stone-900 dark:text-stone-100 focus:ring-0 focus:bg-stone-200 dark:focus:bg-stone-800 w-48 transition-all duration-300 ease-in-out group-hover:w-64 hover:bg-stone-50 dark:hover:bg-stone-900/50" placeholder="Search profiles..." type="text"/>
+</div>
+<button class="p-2 text-stone-600 dark:text-stone-400 hover:bg-stone-50 dark:hover:bg-stone-900/50 hover:text-stone-900 dark:hover:text-white transition-colors duration-300 ease-in-out rounded-full">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">shopping_bag</span>
+</button>
+<button class="p-2 text-stone-600 dark:text-stone-400 hover:bg-stone-50 dark:hover:bg-stone-900/50 hover:text-stone-900 dark:hover:text-white transition-colors duration-300 ease-in-out rounded-full">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">account_circle</span>
+</button>
+</div>
+</div>
+</nav>
+<!-- Main Content Canvas -->
+<main class="flex-grow pt-32 pb-24 px-6 md:px-12 max-w-screen-2xl mx-auto w-full">
+<!-- Header Section -->
+<header class="mb-16 max-w-4xl">
+<h1 class="text-[3.5rem] leading-tight font-headline font-bold tracking-[-0.02em] text-on-background mb-6">Curated Intelligence</h1>
+<p class="text-base font-body text-on-surface-variant leading-relaxed max-w-2xl">Based on your biometric profile and stated goals, FitBridge AI has synthesized these premier recommendations. Each selection represents the pinnacle of performance enhancement.</p>
+</header>
+<!-- Refined Filters -->
+<section class="mb-12 flex flex-wrap items-center gap-4">
+<button class="px-6 py-2 bg-primary-fixed text-on-primary-fixed rounded-full text-xs font-label uppercase tracking-[0.1em] font-medium transition-transform hover:scale-[1.02]">All Matches</button>
+<button class="px-6 py-2 bg-surface-container-highest text-on-surface rounded-full text-xs font-label uppercase tracking-[0.1em] font-medium transition-colors hover:bg-surface-variant">Recovery</button>
+<button class="px-6 py-2 bg-surface-container-highest text-on-surface rounded-full text-xs font-label uppercase tracking-[0.1em] font-medium transition-colors hover:bg-surface-variant">Nutrition</button>
+<button class="px-6 py-2 bg-surface-container-highest text-on-surface rounded-full text-xs font-label uppercase tracking-[0.1em] font-medium transition-colors hover:bg-surface-variant">Gear</button>
+<div class="ml-auto flex items-center gap-2">
+<span class="text-xs font-label uppercase tracking-[0.1em] text-on-surface-variant mr-2">Sort by</span>
+<button class="flex items-center gap-1 text-sm font-body font-medium text-on-surface hover:text-primary transition-colors">
+                    Confidence Match
+                    <span class="material-symbols-outlined text-[18px]">keyboard_arrow_down</span>
+</button>
+</div>
+</section>
+<!-- Bento Grid Recommendations -->
+<div id="recommendationsGrid" class="grid grid-cols-1 md:grid-cols-12 gap-8 lg:gap-12">
+    <!-- Dynamic Content Will Be Injected Here -->
+</div>
+</main>
+<!-- Footer -->
+<footer class="w-full py-20 px-12 bg-neutral-900 dark:bg-black text-neutral-50 flex flex-col md:flex-row justify-between items-start border-t border-neutral-800/50 mt-auto fade-in on scroll">
+<div class="mb-8 md:mb-0">
+<span class="text-neutral-50 font-black tracking-widest text-lg block mb-4">FITBRIDGE AI</span>
+<p class="text-neutral-500 font-['Inter'] text-xs tracking-widest uppercase">© 2024 FitBridge AI Intelligence. All rights reserved.</p>
+</div>
+<div class="flex flex-wrap gap-8 font-['Inter'] text-xs tracking-widest uppercase">
+<a class="text-neutral-500 hover:text-neutral-200 transition-colors" href="#">Privacy Policy</a>
+<a class="text-neutral-500 hover:text-neutral-200 transition-colors" href="#">Terms of Service</a>
+<a class="text-neutral-500 hover:text-neutral-200 transition-colors" href="#">Security</a>
+<a class="text-neutral-500 hover:text-neutral-200 transition-colors" href="#">Status</a>
+</div>
+</footer>
+<script>
+    document.addEventListener("DOMContentLoaded", async () => {
+        const storedProfile = localStorage.getItem("fitProfile");
+        if (!storedProfile) {
+            window.location.href = "/";
+            return;
+        }
+
+        const profile = JSON.parse(storedProfile);
+        
+        try {
+            const response = await fetch('/api/recommend', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(profile)
+            });
+            const data = await response.json();
+            
+            const grid = document.getElementById("recommendationsGrid");
+            grid.innerHTML = "";
+
+            data.recommendations.forEach((item, index) => {
+                const colSpan = index === 0 ? "md:col-span-8" : index === 1 ? "md:col-span-4" : "md:col-span-6";
+                const isHighRisk = item.riskLevel === 'High';
+                
+                const article = document.createElement("article");
+                article.className = `${colSpan} group cursor-pointer flex flex-col mt-4`;
+                article.onclick = () => window.location.href = `/product.html?id=${item.id}`;
+
+                article.innerHTML = `
+                    <div class="relative w-full aspect-[4/3] rounded-none overflow-hidden bg-surface-container-low mb-6">
+                        <img src="${item.image}" class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105" />
+                        <div class="absolute top-4 left-4 glass-panel px-3 py-1.5 rounded-full flex items-center gap-1 shadow-[0_10px_20px_rgba(12,15,15,0.04)]">
+                            <span class="material-symbols-outlined text-primary text-[14px]" style="font-variation-settings: 'FILL' 1;">
+                                ${isHighRisk ? 'warning' : 'verified'}
+                            </span>
+                            <span class="text-[10px] font-label font-semibold text-on-surface tracking-widest">${item.confidence}% MATCH</span>
+                        </div>
+                    </div>
+                    <span class="text-[0.75rem] font-label uppercase tracking-[0.1em] text-on-surface-variant mb-2 block">${item.brand} | Rec Size: ${item.recommendedSize}</span>
+                    <h3 class="text-xl font-headline font-semibold text-on-background mb-2">${item.name}</h3>
+                    <p class="text-sm font-body text-on-surface-variant leading-[1.6] mb-2">${item.reasons[0]}</p>
+                    ${isHighRisk ? '<span class="text-error font-medium text-sm block mb-2">High Return Risk</span>' : '<span class="text-emerald-600 font-medium text-sm block mb-2">Safe Bet</span>'}
+                `;
+                grid.appendChild(article);
+            });
+
+        } catch (error) {
+            console.error("Failed to load recommendations", error);
+        }
+    });
+</script>
+</body></html>

@@ -1,0 +1,42 @@
+[
+    {
+        "id": "sku-101",
+        "name": "Emerald Silk Gown",
+        "brand": "Lululemon",
+        "category": "Evening Wear",
+        "basePrice": 250,
+        "fitTendency": "runs_small",
+        "image": "/images/emerald_silk_gown.png",
+        "variants": ["XS", "S", "M", "L", "XL"]
+    },
+    {
+        "id": "sku-102",
+        "name": "Charcoal Wool Blazer",
+        "brand": "Nike",
+        "category": "Outerwear",
+        "basePrice": 450,
+        "fitTendency": "true_to_size",
+        "image": "/images/charcoal_wool_blazer.png",
+        "variants": ["S", "M", "L", "XL", "XXL"]
+    },
+    {
+        "id": "sku-103",
+        "name": "Cream Cashmere Knit",
+        "brand": "Alo Yoga",
+        "category": "Knitwear",
+        "basePrice": 180,
+        "fitTendency": "runs_large",
+        "image": "/images/cream_cashmere_knit.png",
+        "variants": ["XS", "S", "M", "L"]
+    },
+    {
+        "id": "sku-104",
+        "name": "Performance Joggers",
+        "brand": "Vuori",
+        "category": "Activewear",
+        "basePrice": 98,
+        "fitTendency": "true_to_size",
+        "image": "/images/performance_joggers.png",
+        "variants": ["S", "M", "L", "XL"]
+    }
+]

@@ -1,0 +1,13 @@
+{
+    "baseConfidence": 90,
+    "penalties": {
+        "fitMismatch": -15,
+        "runsSmall": -10,
+        "runsLarge": -10,
+        "extremeSizeShift": -20
+    },
+    "riskThresholds": {
+        "high": 65,
+        "medium": 80
+    }
+}

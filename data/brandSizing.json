@@ -1,0 +1,20 @@
+{
+    "brands": {
+        "Nike": {
+            "sizingScale": ["XS", "S", "M", "L", "XL", "XXL"],
+            "offset": 0
+        },
+        "Lululemon": {
+            "sizingScale": ["XS", "S", "M", "L", "XL", "XXL"],
+            "offset": -1
+        },
+        "Alo Yoga": {
+            "sizingScale": ["XS", "S", "M", "L", "XL", "XXL"],
+            "offset": 1
+        },
+        "Vuori": {
+            "sizingScale": ["XS", "S", "M", "L", "XL", "XXL"],
+            "offset": 0
+        }
+    }
+}
